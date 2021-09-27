@@ -1,0 +1,16 @@
+referência - pseudonimo
+é definida na declaração
+
+int valor;
+int &ref = valor;
+
+facilitar a utilização de funções
+
+referencia escondida
+
+Ex:
+void func(int& x, int y);
+
+extremamente útil, mas pode modificar a variavel passada no programa principal "sem querer" - sempre documentar.
+
+Sempre fazer uma contrutora sem parâmetros e uma inicializadora, também pode fazer uma com todos os parâmetros que já chama a inicialização com os parâmetros passados.
