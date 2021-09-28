@@ -9,6 +9,10 @@ Pessoa::Pessoa(int diaNa, int mesNa, int anoNa, const char* nome){
   Inicializa(diaNa, mesNa, anoNa, nome = "");
 }
 
+Pessoa::~Pessoa(){
+  
+}
+
 void Pessoa::Inicializa(int diaNa, int mesNa, int anoNa, const char* nome){
   diaP = diaNa;
   mesP = mesNa;
@@ -33,4 +37,21 @@ void Pessoa::Print_Idade(){
 
 int Pessoa::getIdade(){
   return (idadeP);
+}
+
+void Pessoa::setUniversidade(Universidade* pU){
+  universidadeP = pU;
+}
+
+
+void Pessoa::showUniversidade(){
+  cout << nomeP << " faz parte da " << universidadeP->getNome() << endl;
+}
+
+void Pessoa::setDepartamento(Departamento* depP){
+  departamentoP = depP;
+}
+
+void Pessoa::showDepartamento(){
+  cout << nomeP << " é do departamento " << departamentoP->getNome() << endl;
 }
